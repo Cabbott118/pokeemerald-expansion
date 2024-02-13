@@ -518,6 +518,26 @@ SlateportCity_PokemartDecor_Dolls:
 	release
 	end
 
+SlateportCity_EventScript_TMSalesman::
+	lock
+	faceplayer
+	message SlateportCity_Text_WouldYouLikeAnyTMs
+	waitmessage
+	pokemart SlateportCity_TMShop
+	msgbox SlateportCity_Text_HopeYouEnjoy, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+SlateportCity_TMShop:
+	.2byte ITEM_TM_HONE_CLAWS
+	.2byte ITEM_TM_THUNDER_WAVE
+	.2byte ITEM_TM_STRUGGLE_BUG
+	.2byte ITEM_TM_CONFIDE
+	.2byte ITEM_NONE
+	release
+	end
+
 SlateportCity_EventScript_ComeBackWithSecretPower::
 	msgbox gText_ComeBackWithSecretPower, MSGBOX_DEFAULT
 	release
@@ -1383,3 +1403,15 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "After all, a tough TRAINER is\n"
 	.string "the perfect fit for the BATTLE TENT!\p"
 	.string "Give it your best effort!$"
+
+SlateportCity_Text_WouldYouLikeAnyTMs:
+	.string "Woah! You scared me, there.\n"
+	.string "I was taking a bite of my GF carrot cake.\n"
+	.string "I'm the resident TM Salesman.\p"
+	.string "Could I interest you in some of\n"
+	.string "my moves?$"
+
+SlateportCity_Text_HopeYouEnjoy:
+	.string "I'm always here if you\n"
+	.string "change your mind.\p"
+	.string "Go get 'em, champ!$"

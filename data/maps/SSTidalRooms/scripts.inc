@@ -1,20 +1,20 @@
 SSTidalRooms_MapScripts::
 	.byte 0
 
-SSTidalRooms_EventScript_SnatchGiver::
+SSTidalRooms_EventScript_EmbargoGiver::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_SNATCH, SSTidalRooms_EventScript_ExplainSnatch
+	goto_if_set FLAG_RECEIVED_TM_EMBARGO, SSTidalRooms_EventScript_ExplainEmbargo
 	msgbox SSTidalRooms_Text_NotSuspiciousTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM_FLING
+	giveitem ITEM_TM_EMBARGO
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM_SNATCH
-	msgbox SSTidalRooms_Text_ExplainSnatch, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_TM_EMBARGO
+	msgbox SSTidalRooms_Text_ExplainEmbargo, MSGBOX_DEFAULT
 	release
 	end
 
-SSTidalRooms_EventScript_ExplainSnatch::
-	msgbox SSTidalRooms_Text_ExplainSnatch, MSGBOX_DEFAULT
+SSTidalRooms_EventScript_ExplainEmbargo::
+	msgbox SSTidalRooms_Text_ExplainEmbargo, MSGBOX_DEFAULT
 	release
 	end
 
@@ -164,12 +164,12 @@ SSTidalRooms_Text_NaomiPostBattle:
 SSTidalRooms_Text_NotSuspiciousTakeThis:
 	.string "Uh… Hi! I… I'm not acting suspicious!\n"
 	.string "Uh… You can have this! For free!\p"
-	.string "It… Honestly, I didn't SNATCH it from\n"
-	.string "someone! I'd never do such a thing!\l"
+	.string "It… Honestly, I didn't steal it from\n"
+	.string "anyone! It wasn't being used!\l"
 	.string "It's clean! You can use it!$"
 
-SSTidalRooms_Text_ExplainSnatch:
-	.string "SNATCH steals the beneficial effects\n"
-	.string "of certain moves before they can be\l"
-	.string "used by a foe or ally.$"
+SSTidalRooms_Text_ExplainEmbargo:
+	.string "EMBARGO prevents the opponent POKéMON\n"
+	.string "from using held items. The trainer\l"
+	.string "can't use items on the POKéMON, either.$"
 
