@@ -54,6 +54,23 @@ SootopolisCity_Mart_EventScript_GentlemanNoLegendaries::
 	release
 	end
 
+SootopolisCity_Mart_EventScript_Man::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_TM_INFESTATION, SootopolisCity_Mart_EventScript_ReceivedInfestation
+	msgbox SootopolisCity_Mart_Text_HaveThisTM, MSGBOX_DEFAULT
+	giveitem ITEM_TM_INFESTATION
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_TM_INFESTATION
+	msgbox SootopolisCity_Mart_Text_ImItchy, MSGBOX_DEFAULT
+	release
+	end
+
+SootopolisCity_Mart_EventScript_ReceivedInfestation::
+	msgbox SootopolisCity_Mart_Text_ImItchy, MSGBOX_DEFAULT
+	release
+	end
+
 SootopolisCity_Mart_Text_PPUpIsGreat:
 	.string "PP UP is great!\p"
 	.string "It raises the POWER POINTS, the PP,\n"
@@ -75,3 +92,13 @@ SootopolisCity_Mart_Text_DidSomethingAwaken:
 	.string "This weather…\n"
 	.string "Did something awaken?$"
 
+SootopolisCity_Mart_Text_HaveThisTM:
+	.string "Do you like playing pranks\n"
+	.string "on people?\p"
+	.string "You'll love this!$"
+
+SootopolisCity_Mart_Text_ImItchy:
+	.string "Ouch! Ouch! Ouch!\p"
+	.string "Be careful how you use that TM.\n"
+	.string "I think I might have used\l"
+	.string "Infestation on myself.$"

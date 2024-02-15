@@ -4410,6 +4410,16 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAUVILLE_CITY_CROONERS_CAFE",
+      "name": "MauvilleCity_CroonersCafe_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Contest",
+      "border_filepath": "data/layouts/MauvilleCity_CroonersCafe/border.bin",
+      "blockdata_filepath": "data/layouts/MauvilleCity_CroonersCafe/map.bin"
     }
   ]
 }
