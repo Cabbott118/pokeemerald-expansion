@@ -45,7 +45,7 @@
 #define FLAG_NO_ENCOUNTER               0x20
 #define FLAG_NO_TRAINER_SEE             0x21
 #define FLAG_NO_COLLISION               0x22
-#define FLAG_RECEIVED_TM_INFESTATION    0x23
+#define FLAG_UNUSED_0x23                0x23
 #define FLAG_UNUSED_0x024               0x24 // Unused Flag
 #define FLAG_UNUSED_0x025               0x25 // Unused Flag
 #define FLAG_UNUSED_0x026               0x26 // Unused Flag
@@ -139,7 +139,7 @@
 #define FLAG_CANCEL_BATTLE_ROOM_CHALLENGE    0x77
 
 #define FLAG_LANDMARK_MIRAGE_TOWER           0x78
-#define FLAG_RECEIVED_TM_BRICK_BREAK         0x79
+#define FLAG_UNUSED_0x79                     0x79
 #define FLAG_RECEIVED_HM_SURF                0x7A
 #define FLAG_RECEIVED_HM_DIVE                0x7B
 #define FLAG_REGISTER_RIVAL_POKENAV          0x7C
@@ -249,15 +249,15 @@
 #define FLAG_RECEIVED_STARTER_DOLL           0xE2
 #define FLAG_RECEIVED_GOOD_ROD               0xE3
 #define FLAG_REGI_DOORS_OPENED               0xE4
-#define FLAG_RECEIVED_TM_SMACK_DOWN              0xE5
-#define FLAG_RECEIVED_TM_SLUDGE_BOMB         0xE6
-#define FLAG_RECEIVED_TM_ROAR                0xE7
-#define FLAG_RECEIVED_TM_GRASS_KNOT          0xE8
 
-#define FLAG_RECEIVED_TM_PSYSHOCK            0xE9
+#define FLAG_UNUSED_0xE5                     0xE5
+#define FLAG_UNUSED_0xE6                     0xE6
+#define FLAG_UNUSED_0xE7                     0xE7
+#define FLAG_UNUSED_0xE8                     0xE8
+#define FLAG_UNUSED_0xE9                     0xE9
+#define FLAG_UNUSED_0xEA                     0xEA
+#define FLAG_UNUSED_0xEB                     0xEB
 
-#define FLAG_RECEIVED_TM_REST                0xEA
-#define FLAG_RECEIVED_TM_ATTRACT             0xEB
 #define FLAG_RECEIVED_GLASS_ORNAMENT         0xEC
 #define FLAG_RECEIVED_SILVER_SHIELD          0xED
 #define FLAG_RECEIVED_GOLD_SHIELD            0xEE
@@ -282,16 +282,22 @@
 #define FLAG_RECEIVED_OLD_ROD                0x101
 #define FLAG_RECEIVED_COIN_CASE              0x102
 #define FLAG_RETURNED_RED_OR_BLUE_ORB        0x103
-#define FLAG_RECEIVED_TM_EMBARGO              0x104
-#define FLAG_RECEIVED_TM_DIG                 0x105
-#define FLAG_RECEIVED_TM_ECHOED_VOICE         0x106
+
+#define FLAG_UNUSED_0x104                    0x104
+#define FLAG_UNUSED_0x105                    0x105
+#define FLAG_UNUSED_0x106                    0x106
+
 #define FLAG_ENTERED_ELITE_FOUR              0x107
-#define FLAG_RECEIVED_TM_HIDDEN_POWER        0x108
-#define FLAG_RECEIVED_TM_TORMENT             0x109
+
+#define FLAG_UNUSED_0x108                    0x108
+#define FLAG_UNUSED_0x109                    0x109
+
 #define FLAG_RECEIVED_LAVARIDGE_EGG          0x10A
 #define FLAG_RECEIVED_REVIVED_FOSSIL_MON     0x10B
 #define FLAG_SECRET_BASE_REGISTRY_ENABLED    0x10C
-#define FLAG_RECEIVED_TM_THIEF               0x10D
+
+#define FLAG_UNUSED_0x10D                    0x10D
+
 #define FLAG_CONTEST_SKETCH_CREATED          0x10E  // Set but never read
 #define FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE   0x10F
 #define FLAG_RECEIVED_EXP_SHARE              0x110

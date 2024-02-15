@@ -329,11 +329,12 @@ Route104_EventScript_Woman::
 Route104_EventScript_Boy2::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_ECHOED_VOICE, Route104_EventScript_ReceivedEchoedVoice
+	checkitem ITEM_TM_ECHOED_VOICE
+	compare VAR_RESULT, TRUE
+	goto_if_eq Route104_EventScript_ReceivedEchoedVoice
 	msgbox Route104_Text_LikeScreamingTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM_ECHOED_VOICE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM_ECHOED_VOICE
 	release
 	end
 

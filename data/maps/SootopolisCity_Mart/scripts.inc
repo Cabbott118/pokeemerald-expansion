@@ -57,11 +57,12 @@ SootopolisCity_Mart_EventScript_GentlemanNoLegendaries::
 SootopolisCity_Mart_EventScript_Man::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_INFESTATION, SootopolisCity_Mart_EventScript_ReceivedInfestation
+	checkitem ITEM_TM_INFESTATION
+	compare VAR_RESULT, TRUE
+	goto_if_eq SootopolisCity_Mart_EventScript_ReceivedInfestation
 	msgbox SootopolisCity_Mart_Text_HaveThisTM, MSGBOX_DEFAULT
 	giveitem ITEM_TM_INFESTATION
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM_INFESTATION
 	msgbox SootopolisCity_Mart_Text_ImItchy, MSGBOX_DEFAULT
 	release
 	end

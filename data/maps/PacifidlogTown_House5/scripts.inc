@@ -22,17 +22,18 @@ PacifidlogTown_House5_EventScript_Gentleman::
 PacifidlogTown_House5_EventScript_OldMan::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_PSYSHOCK, PacifidlogTown_House5_EventScript_ReceivedPsyshock
+	checkitem ITEM_TM_PSYSHOCK
+	compare VAR_RESULT, TRUE
+	goto_if_eq PacifidlogTown_House5_EventScript_ReceivedPsyshock
 	msgbox PacifidlogTown_House5_Text_ItsQuietHereHaveThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM_PSYSHOCK
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM_PSYSHOCK
-	msgbox PacifidlogTown_House5_Text_IFeelWeak, MSGBOX_DEFAULT
+	msgbox PacifidlogTown_House5_Text_IFeelAtPeace, MSGBOX_DEFAULT
 	release
 	end
 
 PacifidlogTown_House5_EventScript_ReceivedPsyshock::
-	msgbox PacifidlogTown_House5_Text_IFeelWeak, MSGBOX_DEFAULT
+	msgbox PacifidlogTown_House5_Text_IFeelAtPeace, MSGBOX_DEFAULT
 	release
 	end
 
@@ -53,13 +54,15 @@ PacifidlogTown_House5_Text_MirageIslandAppearDependingOnWeather:
 
 PacifidlogTown_House5_Text_ItsQuietHereHaveThis:
 	.string "Hello, I'm Don.\p"
-	.string "Do you hear that?\n"
-	.string "No? I don't either.\p"
+	.string " … … …\n"
+	.string "Do you hear that?\p"
+	.string "No?\n"
+	.string "I don't either.\p"
 	.string "I can't believe how quiet this\n"
-	.string "little town is.\l"
+	.string "little town is.\p"
 	.string "I want to give you something.$"
 
-PacifidlogTown_House5_Text_IFeelWeak:
+PacifidlogTown_House5_Text_IFeelAtPeace:
 	.string "I haven't felt this at peace in\n"
 	.string "quite some time.\p"
 	.string "This might be a nice place to spend\n"

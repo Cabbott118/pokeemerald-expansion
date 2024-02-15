@@ -9,14 +9,15 @@ Route123_OnTransition:
 Route123_EventScript_GrassKnotGirl::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_TM_GRASS_KNOT, Route123_EventScript_ReceivedGrassKnot
+	checkitem ITEM_TM_GRASS_KNOT
+	compare VAR_RESULT, TRUE
+	goto_if_eq Route123_EventScript_ReceivedGrassKnot
 	msgbox Route123_Text_LoveGrassMonsHaveAny, MSGBOX_DEFAULT
 	special IsGrassTypeInParty
 	goto_if_eq VAR_RESULT, FALSE, Route123_EventScript_NoGrassMons
 	msgbox Route123_Text_YouLikeGrassMonsTooHaveThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM_GRASS_KNOT
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	setflag FLAG_RECEIVED_TM_GRASS_KNOT
 	msgbox Route123_Text_CheckTreesWithMyGrassMon, MSGBOX_DEFAULT
 	release
 	end

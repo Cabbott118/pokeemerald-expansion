@@ -237,6 +237,7 @@ gStdScripts_End::
 	.include "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc"
 	.include "data/maps/MauvilleCity_PokemonCenter_2F/scripts.inc"
 	.include "data/maps/MauvilleCity_Mart/scripts.inc"
+	.include "data/maps/MauvilleCity_CalebsNursery/scripts.inc"
 	.include "data/maps/RustboroCity_DevonCorp_1F/scripts.inc"
 	.include "data/maps/RustboroCity_DevonCorp_2F/scripts.inc"
 	.include "data/maps/RustboroCity_DevonCorp_3F/scripts.inc"
@@ -1071,5 +1072,3 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
-
-	.include "data/maps/MauvilleCity_CroonersCafe/scripts.inc"
