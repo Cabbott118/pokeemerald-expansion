@@ -4415,9 +4415,9 @@
       "id": "LAYOUT_MAUVILLE_CITY_CROONERS_CAFE",
       "name": "MauvilleCity_CroonersCafe_Layout",
       "width": 20,
-      "height": 20,
+      "height": 10,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Contest",
+      "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/MauvilleCity_CroonersCafe/border.bin",
       "blockdata_filepath": "data/layouts/MauvilleCity_CroonersCafe/map.bin"
     }
