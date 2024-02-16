@@ -9423,7 +9423,7 @@ const struct Item gItemsInfo[] =
     [ITEM_TM_BLIZZARD] =
     {
         .name = _("TM014"),
-        .price = 5500,
+        .price = 30000,
         .description = COMPOUND_STRING(
             "A brutal snow-and-\n"
             "wind attack that\n"

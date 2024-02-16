@@ -25,15 +25,15 @@ PacifidlogTown_House5_EventScript_OldMan::
 	checkitem ITEM_TM_PSYSHOCK
 	compare VAR_RESULT, TRUE
 	goto_if_eq PacifidlogTown_House5_EventScript_ReceivedPsyshock
-	msgbox PacifidlogTown_House5_Text_ItsQuietHereHaveThis, MSGBOX_DEFAULT
+	msgbox PacifidlogTown_House5_Text_InMemoryOfDon, MSGBOX_DEFAULT
 	giveitem ITEM_TM_PSYSHOCK
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-	msgbox PacifidlogTown_House5_Text_IFeelAtPeace, MSGBOX_DEFAULT
+	msgbox PacifidlogTown_House5_Text_LegacyOfTheDeep, MSGBOX_DEFAULT
 	release
 	end
 
 PacifidlogTown_House5_EventScript_ReceivedPsyshock::
-	msgbox PacifidlogTown_House5_Text_IFeelAtPeace, MSGBOX_DEFAULT
+	msgbox PacifidlogTown_House5_Text_LegacyOfTheDeep, MSGBOX_DEFAULT
 	release
 	end
 
@@ -52,19 +52,26 @@ PacifidlogTown_House5_Text_MirageIslandAppearDependingOnWeather:
 	.string "Or is it really appearing and\n"
 	.string "disappearing?$"
 
-PacifidlogTown_House5_Text_ItsQuietHereHaveThis:
-	.string "Hello, I'm Don.\p"
+PacifidlogTown_House5_Text_InMemoryOfDon:
+	.string "Ahoy there! I'm Don, though some\n"
+	.string "call me the Old Sea Dog.\p"
 	.string " … … …\n"
-	.string "Do you hear that?\p"
+	.string "Do you hear the whispers of the waves?\p"
 	.string "No?\n"
-	.string "I don't either.\p"
-	.string "I can't believe how quiet this\n"
-	.string "little town is.\p"
-	.string "I want to give you something.$"
+	.string "You might if you listen closely.\p"
+	.string "This tranquil haven reminds me of\n"
+	.string "the serenity Mary and I found in\l"
+	.string "our years together.\p"
+	.string "I want to share a memento with you.$"
 
-PacifidlogTown_House5_Text_IFeelAtPeace:
-	.string "I haven't felt this at peace in\n"
-	.string "quite some time.\p"
-	.string "This might be a nice place to spend\n"
-	.string "my remaining days.\p"
-	.string "I hope you'll continue to visit me.$"
+PacifidlogTown_House5_Text_LegacyOfTheDeep:
+	.string "In the silence of this sea-kissed\n"
+	.string "colony, I find solace deeper than\l"
+	.string "the ocean's depths.\p"
+	.string "Here, amidst the whispers of the\n"
+	.string "tides, I feel the echoes of a life\l"
+	.string "well-lived.\p"
+	.string "May you cherish the memories we've\n"
+	.string "shared, as you continue to visit\l"
+	.string "this humble abode.$"
+

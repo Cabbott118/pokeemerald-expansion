@@ -17,7 +17,6 @@ FallarborTown_Mart_Pokemart:
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_X_SP_ATK
 	.2byte ITEM_X_SPEED
@@ -25,6 +24,32 @@ FallarborTown_Mart_Pokemart:
 	.2byte ITEM_X_DEFENSE
 	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_GUARD_SPEC
+	.2byte ITEM_NONE
+	release
+	end
+
+FallarborTown_Mart_EventScript_StoneSeller::
+	lock
+	faceplayer
+	message FallarborTown_Mart_Text_StonesComeFromSpace
+	waitmessage
+	pokemart FallarborTown_Mart_StoneShop
+	msgbox FallarborTown_Mart_Text_HopeYouEnjoy, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+FallarborTown_Mart_StoneShop:
+	.2byte ITEM_FIRE_STONE
+	.2byte ITEM_WATER_STONE
+	.2byte ITEM_THUNDER_STONE
+	.2byte ITEM_LEAF_STONE
+	.2byte ITEM_ICE_STONE
+	.2byte ITEM_SUN_STONE
+	.2byte ITEM_MOON_STONE
+	.2byte ITEM_SHINY_STONE
+	.2byte ITEM_DUSK_STONE
+	.2byte ITEM_DAWN_STONE
 	.2byte ITEM_NONE
 	release
 	end
@@ -46,6 +71,21 @@ FallarborTown_Mart_EventScript_Skitty::
 	waitmoncry
 	release
 	end
+
+FallarborTown_Mart_Text_StonesComeFromSpace:
+	.string "Every so often, the skies above\n"
+	.string "Mt. Chimney will shimmer with\l"
+	.string "an otherworldly light.\p"
+	.string "When the cosmic energies and\n"
+	.string "meteoric matter converge…\p"
+	.string "They sometimes rain down these\n"
+	.string "exceedingly rare stones!\p"
+	.string "Would you like to buy any?$"
+
+FallarborTown_Mart_Text_HopeYouEnjoy:
+	.string "I'm always here if you need\n"
+	.string "any rare stones.\p"
+	.string "Go get 'em, champ!$"
 
 FallarborTown_Mart_Text_DecidingSkittyEvolve:
 	.string "I'm having a hard time deciding if I\n"
