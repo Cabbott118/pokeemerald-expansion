@@ -45,8 +45,8 @@
 #define FLAG_NO_ENCOUNTER               0x20
 #define FLAG_NO_TRAINER_SEE             0x21
 #define FLAG_NO_COLLISION               0x22
-#define FLAG_UNUSED_0x23                0x23
-#define FLAG_UNUSED_0x024               0x24 // Unused Flag
+#define FLAG_DYNAMAX_BATTLE             0x23
+#define FLAG_SHINY_BATTLE               0x24 // Unused Flag
 #define FLAG_UNUSED_0x025               0x25 // Unused Flag
 #define FLAG_UNUSED_0x026               0x26 // Unused Flag
 #define FLAG_UNUSED_0x027               0x27 // Unused Flag

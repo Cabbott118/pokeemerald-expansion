@@ -1853,3 +1853,12 @@ const u8 gText_ExpShareOff[] = _("The Exp. Share has been turned off.{PAUSE_UNTI
 const u8 gText_BasePointsResetToZero[] = _("{STR_VAR_1}'s base points\nwere all reset to zero!{PAUSE_UNTIL_PRESS}");
 const u8 gText_Fertilize[] = _("FERTILIZE");
 const u8 gText_PlantBerry[] = _("PLANT BERRY");
+
+// Region names
+const u8 gText_Kanto[] =    _("Kanto");
+const u8 gText_Johto[] =    _("Johto");
+const u8 gText_Sinnoh[] =   _("Sinnoh");
+const u8 gText_Unova[] =    _("Unova");
+const u8 gText_Kalos[] =    _("Kalos");
+const u8 gText_Alola[] =    _("Alola");
+const u8 gText_Galar[] =    _("Galar");
