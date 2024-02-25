@@ -69,6 +69,25 @@ DewfordTown_EventScript_Woman::
 	msgbox DewfordTown_Text_TinyIslandCommunity, MSGBOX_NPC
 	end
 
+DewfordTown_EventScript_StandAloneMartEmployee::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart DewfordTown_Mart_Pokemart
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+
+	.align 2
+DewfordTown_Mart_Pokemart:
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_LURE_BALL
+	.2byte ITEM_NET_BALL
+	.2byte ITEM_DUSK_BALL
+	.2byte ITEM_NONE
+	release
+	end
+
 DewfordTown_EventScript_TownSign::
 	msgbox DewfordTown_Text_TownSign, MSGBOX_SIGN
 	end

@@ -25,6 +25,7 @@
     "gMapGroup_IndoorRoute117",
     "gMapGroup_IndoorRoute121",
     "gMapGroup_Dungeons",
+    "gMapGroup_Dungeons2",
     "gMapGroup_IndoorDynamic",
     "gMapGroup_SpecialArea",
     "gMapGroup_IndoorRoute104Prototype",
@@ -335,6 +336,8 @@
     "GraniteCave_B2F",
     "GraniteCave_StevensRoom",
     "PetalburgWoods",
+    "PetalburgWoods_2",
+    "PetalburgWoods_3",
     "MtChimney",
     "JaggedPass",
     "FieryPath",
@@ -431,6 +434,11 @@
     "TerraCave_End",
     "AlteringCave",
     "MeteorFalls_StevensCave"
+  ],
+  "gMapGroup_Dungeons2": [
+    "VerdanturfMeadow",
+    "DewfordMeadow",
+    "DewfordManor_1F"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
