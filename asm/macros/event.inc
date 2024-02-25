@@ -1813,7 +1813,6 @@
 	_dynmultichoice \left, \top, \ignoreBPress, \maxBeforeScroll, \shouldSort, \initialSelected, \callbacks, NULL
 	.endm
 
-
 @ Supplementary
 
 	.macro goto_if_unset flag:req, dest:req
