@@ -23,6 +23,7 @@
 #include "constants/items.h"
 #include "constants/layouts.h"
 #include "constants/weather.h"
+#include "battle_tower.h"
 
 extern const u8 EventScript_SprayWoreOff[];
 
@@ -339,6 +340,18 @@ static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon, u8 wildMonIn
                     rand--;
             }
         }
+        #ifdef P_DYNAMIC_WILD_MON_LEVELS
+            u8 highestLevel = GetHighestLevelInPlayerParty();
+
+            min = highestLevel - 3;
+            max = highestLevel + 3;
+            range = max - min + 1;
+            rand = Random() % range;
+            
+            if ((min + rand) > 100) return 100;
+            return min + rand;
+        #endif
+
         return min + rand;
     }
     else

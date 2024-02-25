@@ -3399,6 +3399,26 @@ s32 GetHighestLevelInPlayerParty(void)
     return highestLevel;
 }
 
+s32 GetLowestLevelInPlayerParty(void)
+{
+    s32 lowestLevel = 0;
+    s32 i;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL)
+            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG, NULL) != SPECIES_EGG)
+        {
+            s32 level = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL, NULL);
+            if (level < lowestLevel)
+                lowestLevel = level;
+        }
+    }
+
+    return lowestLevel;
+}
+
+
 // Frontier Trainer parties are roughly scaled in difficulty with higher trainer IDs, so scale IVs as well
 // Duplicated in Battle Dome as GetDomeTrainerMonIvs
 static u8 GetFrontierTrainerFixedIvs(u16 trainerId)

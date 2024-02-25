@@ -296,7 +296,7 @@ static const u8 sContextMenuItems_KeyItemsPocket[] = {
 };
 
 static const u8 sContextMenuItems_BallsPocket[] = {
-    ACTION_GIVE,        ACTION_DUMMY,
+    ACTION_USE,         ACTION_GIVE,
     ACTION_TOSS,        ACTION_CANCEL
 };
 
@@ -577,6 +577,11 @@ void CB2_BagMenuFromBattle(void)
 void CB2_ChooseBerry(void)
 {
     GoToBagMenu(ITEMMENULOCATION_BERRY_TREE, BERRIES_POCKET, CB2_ReturnToFieldContinueScript);
+}
+
+void CB2_ChooseItem(void)
+{
+    GoToBagMenu(ITEMMENULOCATION_BERRY_TREE, ITEMS_POCKET, CB2_ReturnToFieldContinueScript);
 }
 
 // Choosing mulch to use

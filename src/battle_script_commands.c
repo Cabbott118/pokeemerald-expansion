@@ -40,6 +40,7 @@
 #include "rtc.h"
 #include "party_menu.h"
 #include "battle_arena.h"
+#include "battle_tower.h"
 #include "battle_pike.h"
 #include "battle_pyramid.h"
 #include "field_specials.h"
@@ -7478,7 +7479,22 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
     else
     {
         const struct TrainerMon *party = gTrainers[trainerId].party;
-        lastMonLevel = party[gTrainers[trainerId].partySize - 1].lvl;
+        
+        lastMonLevel = GetHighestLevelInPlayerParty();
+
+        if (lastMonLevel + party[gTrainers[trainerId].partySize - 1].lvl < 1)
+        {
+            lastMonLevel = 1;
+        }
+        else if (lastMonLevel + party[gTrainers[trainerId].partySize - 1].lvl > 100)
+        {
+            lastMonLevel = 100;
+        }
+        else
+        {
+            lastMonLevel += party[gTrainers[trainerId].partySize - 1].lvl;
+        }
+        
         trainerMoney = gTrainerClasses[gTrainers[trainerId].trainerClass].money;
 
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)

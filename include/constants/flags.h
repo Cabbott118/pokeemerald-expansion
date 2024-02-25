@@ -46,7 +46,7 @@
 #define FLAG_NO_TRAINER_SEE             0x21
 #define FLAG_NO_COLLISION               0x22
 #define FLAG_DYNAMAX_BATTLE             0x23
-#define FLAG_SHINY_BATTLE               0x24 // Unused Flag
+#define FLAG_SHINY_BATTLE               0x24
 #define FLAG_UNUSED_0x025               0x25 // Unused Flag
 #define FLAG_UNUSED_0x026               0x26 // Unused Flag
 #define FLAG_UNUSED_0x027               0x27 // Unused Flag
@@ -250,7 +250,7 @@
 #define FLAG_RECEIVED_GOOD_ROD               0xE3
 #define FLAG_REGI_DOORS_OPENED               0xE4
 
-#define FLAG_UNUSED_0xE5                     0xE5
+#define FLAG_RECEIVED_AUDINO                 0xE5
 #define FLAG_UNUSED_0xE6                     0xE6
 #define FLAG_UNUSED_0xE7                     0xE7
 #define FLAG_UNUSED_0xE8                     0xE8
@@ -296,8 +296,7 @@
 #define FLAG_RECEIVED_REVIVED_FOSSIL_MON     0x10B
 #define FLAG_SECRET_BASE_REGISTRY_ENABLED    0x10C
 
-#define FLAG_UNUSED_0x10D                    0x10D
-
+#define FLAG_RECEIVED_OLD_AMBER              0x10D
 #define FLAG_CONTEST_SKETCH_CREATED          0x10E  // Set but never read
 #define FLAG_EVIL_TEAM_ESCAPED_STERN_SPOKE   0x10F
 #define FLAG_RECEIVED_EXP_SHARE              0x110
@@ -658,10 +657,10 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
+#define FLAG_HIDDEN_ITEM_DEWFORD_MEADOW_GRASS_GEM  0x264 // Unused Flag
+#define FLAG_HIDDEN_ITEM_DEWFORD_MEADOW_FAIRY_GEM  0x265 // Unused Flag
+#define FLAG_HIDDEN_ITEM_DEWFORD_MANOR_DREAD_PLATE  0x266 // Unused Flag
+#define FLAG_HIDDEN_ITEM_DEWFORD_MANOR_BOTTLE_CAP  0x267 // Unused Flag
 #define FLAG_UNUSED_0x268  0x268 // Unused Flag
 #define FLAG_UNUSED_0x269  0x269 // Unused Flag
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
@@ -1226,16 +1225,16 @@
 
 #define FLAG_ITEM_ROUTE_134_SLUDGE_WAVE                             0x493
 #define FLAG_ITEM_JAGGED_PASS_FLAME_CHARGE                          0x494
-#define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
-#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
-#define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
-#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
+#define FLAG_ITEM_PETALBURG_WOODS_2_HEAL_BALL                       0x495
+#define FLAG_ITEM_PETALBURG_WOODS_2_SUPER_POTION                    0x496
+#define FLAG_ITEM_PETALBURG_WOODS_2_SUN_STONE                       0x497
+#define FLAG_ITEM_PETALBURG_WOODS_BIG_ROOT                          0x498
+#define FLAG_ITEM_PETALBURG_WOODS_INSECT_PLATE                      0x499
+#define FLAG_ITEM_PETALBURG_WOODS_3_BEEDRILLITE                     0x49A
+#define FLAG_UNUSED_0x49B                                           0x49B
+#define FLAG_ITEM_DEWFORD_MEADOW_RING_TARGET                        0x49C
+#define FLAG_ITEM_DEWFORD_MEADOW_GALLADITE                          0x49D
+#define FLAG_ITEM_DEWFORD_MANOR_BANETTITE                           0x49E
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
 #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
@@ -1508,12 +1507,12 @@
 
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            (SYSTEM_FLAGS + 0x84)
 
-#define FLAG_UNUSED_0x8E5                           (SYSTEM_FLAGS + 0x85) // Unused Flag
-#define FLAG_UNUSED_0x8E6                           (SYSTEM_FLAGS + 0x86) // Unused Flag
-#define FLAG_UNUSED_0x8E7                           (SYSTEM_FLAGS + 0x87) // Unused Flag
-#define FLAG_UNUSED_0x8E8                           (SYSTEM_FLAGS + 0x88) // Unused Flag
-#define FLAG_UNUSED_0x8E9                           (SYSTEM_FLAGS + 0x89) // Unused Flag
-#define FLAG_UNUSED_0x8EA                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
+#define FLAG_LANDMARK_DEWFORD_MEADOW                (SYSTEM_FLAGS + 0x85)
+#define FLAG_LANDMARK_DEWFORD_MANOR                 (SYSTEM_FLAGS + 0x86)
+#define FLAG_LANDMARK_VERDANT_MEADOW                (SYSTEM_FLAGS + 0x87)
+#define FLAG_LANDMARK_EMBER_PATH                    (SYSTEM_FLAGS + 0x88)
+#define FLAG_LANDMARK_ASHEN_WOODS                   (SYSTEM_FLAGS + 0x89)
+#define FLAG_LANDMARK_SANDSTREWN_RUINS              (SYSTEM_FLAGS + 0x8A)
 #define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
 #define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
 #define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag

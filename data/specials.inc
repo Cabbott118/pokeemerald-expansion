@@ -554,3 +554,8 @@ gSpecials::
 	def_special Script_GetChosenMonDefensiveEV
 	def_special Script_GetChosenMonOffensiveIV
 	def_special Script_GetChosenMonDefensiveIV
+	def_special Bag_ChooseItem
+	def_special FossilToSpecies
+	def_special IsItemFossil
+	def_special DoesPlayerHaveFossil
+	def_special GetStaticEncounterLevel
