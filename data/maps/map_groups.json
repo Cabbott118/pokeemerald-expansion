@@ -189,8 +189,7 @@
     "MauvilleCity_House2",
     "MauvilleCity_PokemonCenter_1F",
     "MauvilleCity_PokemonCenter_2F",
-    "MauvilleCity_Mart",
-    "MauvilleCity_CalebsNursery"
+    "MauvilleCity_Mart"
   ],
   "gMapGroup_IndoorRustboro": [
     "RustboroCity_DevonCorp_1F",
@@ -328,6 +327,8 @@
     "MeteorFalls_1F_2R",
     "MeteorFalls_B1F_1R",
     "MeteorFalls_B1F_2R",
+    "MeteorFalls_JirachisRoom",
+    "MeteorFalls_StevensCave",
     "RusturfTunnel",
     "Underwater_SootopolisCity",
     "DesertRuins",
@@ -369,6 +370,7 @@
     "CaveOfOrigin_UnusedRubySapphireMap2",
     "CaveOfOrigin_UnusedRubySapphireMap3",
     "CaveOfOrigin_B1F",
+    "CaveOfOrigin_DianciesRoom",
     "VictoryRoad_1F",
     "VictoryRoad_B1F",
     "VictoryRoad_B2F",
@@ -400,6 +402,9 @@
     "SealedChamber_OuterRoom",
     "SealedChamber_InnerRoom",
     "ScorchedSlab",
+    "ScorchedSlab_B1F",
+    "ScorchedSlab_B2F",
+    "ScorchedSlab_HeatransRoom",
     "AquaHideout_UnusedRubyMap1",
     "AquaHideout_UnusedRubyMap2",
     "AquaHideout_UnusedRubyMap3",
@@ -433,7 +438,17 @@
     "TerraCave_Entrance",
     "TerraCave_End",
     "AlteringCave",
-    "MeteorFalls_StevensCave"
+    "AlteringCave_1F",
+    "AlteringCave_B1F",
+    "Seaspray_Cave",
+    "Seaspray_Cave_B1F",
+    "EmberPath",
+    "AshenWoods",
+    "SandstrewnRuins",
+    "SandstrewnRuins_B1F",
+    "Route111_RuinsExterior",
+    "SandstrewnRuins_2F",
+    "SandstrewnRuins_3F"
   ],
   "gMapGroup_Dungeons2": [
     "VerdanturfMeadow",

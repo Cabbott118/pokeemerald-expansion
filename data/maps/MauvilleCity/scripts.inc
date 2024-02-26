@@ -54,10 +54,6 @@ MauvilleCity_EventScript_GameCornerSign::
 	msgbox MauvilleCity_Text_GameCornerSign, MSGBOX_SIGN
 	end
 
-MauvilleCity_EventScript_CalebsNursery::
-	msgbox MauvilleCity_Text_CalebsNurserySign, MSGBOX_SIGN
-	end
-
 MauvilleCity_EventScript_SchoolKidM::
 	lock
 	faceplayer
@@ -655,11 +651,6 @@ MauvilleCity_Text_BikeShopSign:
 MauvilleCity_Text_GameCornerSign:
 	.string "“The play spot for all!”\n"
 	.string "MAUVILLE GAME CORNER$"
-
-MauvilleCity_Text_CalebsNurserySign:
-	.string "“Afforadble prices your wife\n"
-	.string "won't be able to say no to!”\p"
-	.string "CALEB'S NURSERY$"
 
 MauvilleCity_Text_ExplainTV:
 	.string "Hi, do you check out TV at all?\p"

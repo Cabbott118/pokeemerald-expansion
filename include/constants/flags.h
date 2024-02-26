@@ -42,28 +42,28 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define FLAG_NO_ENCOUNTER               0x20
-#define FLAG_NO_TRAINER_SEE             0x21
-#define FLAG_NO_COLLISION               0x22
-#define FLAG_DYNAMAX_BATTLE             0x23
-#define FLAG_SHINY_BATTLE               0x24
-#define FLAG_UNUSED_0x025               0x25 // Unused Flag
-#define FLAG_UNUSED_0x026               0x26 // Unused Flag
-#define FLAG_UNUSED_0x027               0x27 // Unused Flag
-#define FLAG_UNUSED_0x028               0x28 // Unused Flag
-#define FLAG_UNUSED_0x029               0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A               0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B               0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C               0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D               0x2D // Unused Flag
-#define FLAG_UNUSED_0x02E               0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F               0x2F // Unused Flag
-#define FLAG_UNUSED_0x030               0x30 // Unused Flag
-#define FLAG_UNUSED_0x031               0x31 // Unused Flag
-#define FLAG_UNUSED_0x032               0x32 // Unused Flag
-#define FLAG_UNUSED_0x033               0x33 // Unused Flag
-#define FLAG_UNUSED_0x034               0x34 // Unused Flag
-#define FLAG_UNUSED_0x035               0x35 // Unused Flag
+#define FLAG_NO_ENCOUNTER                   0x20
+#define FLAG_NO_TRAINER_SEE                 0x21
+#define FLAG_NO_COLLISION                   0x22
+#define FLAG_DYNAMAX_BATTLE                 0x23
+#define FLAG_SHINY_BATTLE                   0x24
+#define FLAG_SEASPRAY_CAVE_BLASTOISINITE    0x25
+#define FLAG_SEASPRAY_CAVE_B1F_ABOMASITE    0x26
+#define FLAG_UNUSED_0x27                    0x27  // Unused Flag
+#define FLAG_EMBER_PATH_CHARIZARDITE_Y      0x28
+#define FLAG_ASHEN_WOODS_PINSIRITE          0x29
+#define FLAG_SANDSTREWN_RUINS_PROTECTOR     0x2A
+#define FLAG_SANDSTREWN_RUINS_ARMOR_FOSSIL  0x2B
+#define FLAG_SANDSTREWN_RUINS_SAIL_FOSSIL   0x2C
+#define FLAG_SANDSTREWN_RUINS_JAW_FOSSIL    0x2D
+#define FLAG_SCORCHED_SLAB_TYRANITARITE     0x2E // Unused Flag
+#define FLAG_SANDSTREWN_RUINS_GARCHOMPITE               0x2F // Unused Flag
+#define FLAG_SANDSTREWN_RUINS_PLUME_FOSSIL               0x30 // Unused Flag
+#define FLAG_SANDSTREWN_RUINS_SKULL_FOSSIL               0x31 // Unused Flag
+#define FLAG_SANDSTREWN_RUINS_COVER_FOSSIL               0x32 // Unused Flag
+#define FLAG_SANDSTREWN_RUINS_HELX_FOSSIL               0x33 // Unused Flag
+#define FLAG_SANDSTREWN_RUINS_DOME_FOSSIL               0x34 // Unused Flag
+#define FLAG_ITEM_ROUTE_111_MEDICHAMITE               0x35 // Unused Flag
 #define FLAG_UNUSED_0x036               0x36 // Unused Flag
 #define FLAG_UNUSED_0x037               0x37 // Unused Flag
 #define FLAG_UNUSED_0x038               0x38 // Unused Flag
@@ -511,18 +511,18 @@
 #define FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL 0x1D8
 #define FLAG_ENABLE_JUAN_MATCH_CALL          0x1D9
 
-#define FLAG_UNUSED_0x1DA                    0x1DA // Unused Flag
+#define FLAG_DEFEATED_DIANCIE                0x1DA
 
 #define FLAG_SHOWN_MYSTIC_TICKET             0x1DB
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_UNUSED_0x1DE                    0x1DE // Unused Flag
-#define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
-#define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
-#define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
-#define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
-#define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
+#define FLAG_DEFEATED_MEWTWO                 0x1DE
+#define FLAG_DEFEATED_ARTICUNO               0x1DF
+#define FLAG_DEFEATED_ZAPDOS                 0x1E0
+#define FLAG_DEFEATED_MOLTRES                0x1E1
+#define FLAG_DEFEATED_JIRACHI                0x1E2
+#define FLAG_DEFEATED_HEATRAN                0x1E3
 
 // Mystery Gift Flags (Unknown)
 #define FLAG_MYSTERY_GIFT_DONE               0x1E4
@@ -1513,7 +1513,7 @@
 #define FLAG_LANDMARK_EMBER_PATH                    (SYSTEM_FLAGS + 0x88)
 #define FLAG_LANDMARK_ASHEN_WOODS                   (SYSTEM_FLAGS + 0x89)
 #define FLAG_LANDMARK_SANDSTREWN_RUINS              (SYSTEM_FLAGS + 0x8A)
-#define FLAG_UNUSED_0x8EB                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
+#define FLAG_LANDMARK_SEASPRAY_CAVE                 (SYSTEM_FLAGS + 0x8B)
 #define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
 #define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
 #define FLAG_UNUSED_0x8EE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
