@@ -57,10 +57,6 @@ static const u8 LandmarkName_MirageTower[] = _("MIRAGE TOWER");
 static const u8 LandmarkName_AlteringCave[] = _("ALTERING CAVE");
 static const u8 LandmarkName_DesertUnderpass[] = _("DESERT UNDERPASS");
 static const u8 LandmarkName_TrainerHill[] = _("TRAINER HILL");
-static const u8 LandmarkName_SeasprayCave[] = _("Seaspray Cave");
-static const u8 LandmarkName_EmberPath[] = _("Ember Path");
-static const u8 LandmarkName_AshenWoods[] = _("Ashen Woods");
-static const u8 LandmarkName_SandstrewnRuins[] = _("Sandstrewn Ruins");
 
 static const struct Landmark Landmark_FlowerShop = {LandmarkName_FlowerShop, FLAG_LANDMARK_FLOWER_SHOP};
 static const struct Landmark Landmark_PetalburgWoods = {LandmarkName_PetalburgWoods, -1};
@@ -103,10 +99,6 @@ static const struct Landmark Landmark_MirageTower = {LandmarkName_MirageTower, F
 static const struct Landmark Landmark_AlteringCave = {LandmarkName_AlteringCave, FLAG_LANDMARK_ALTERING_CAVE};
 static const struct Landmark Landmark_DesertUnderpass = {LandmarkName_DesertUnderpass, FLAG_LANDMARK_DESERT_UNDERPASS};
 static const struct Landmark Landmark_TrainerHill = {LandmarkName_TrainerHill, FLAG_LANDMARK_TRAINER_HILL};
-static const struct Landmark Landmark_SeasprayCave = {LandmarkName_SeasprayCave, FLAG_LANDMARK_SEASPRAY_CAVE};
-static const struct Landmark Landmark_EmberPath = {LandmarkName_EmberPath, FLAG_LANDMARK_EMBER_PATH};
-static const struct Landmark Landmark_AshenWoods = {LandmarkName_AshenWoods, FLAG_LANDMARK_ASHEN_WOODS};
-static const struct Landmark Landmark_SandstrewnRuins = {LandmarkName_SandstrewnRuins, FLAG_LANDMARK_SANDSTREWN_RUINS};
 
 static const struct Landmark *const Landmarks_Route103_2[]  =
 {
@@ -187,7 +179,6 @@ static const struct Landmark *const Landmarks_Route111_1[]  =
 static const struct Landmark *const Landmarks_Route111_2[]  =
 {
     &Landmark_MirageTower,
-    &Landmark_SandstrewnRuins,
     &Landmark_Desert,
     NULL,
 };
@@ -211,7 +202,6 @@ static const struct Landmark *const Landmarks_Route112_0[]  =
 {
     &Landmark_FieryPath,
     &Landmark_JaggedPass,
-    &Landmark_EmberPath,
     NULL,
 };
 
@@ -238,12 +228,6 @@ static const struct Landmark *const Landmarks_Route114_1[]  =
 static const struct Landmark *const Landmarks_Route114_2[]  =
 {
     &Landmark_LanettesHouse,
-    NULL,
-};
-
-static const struct Landmark *const Landmarks_Route115[]  =
-{
-    &Landmark_SeasprayCave,
     NULL,
 };
 

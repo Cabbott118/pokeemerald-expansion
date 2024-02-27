@@ -453,8 +453,6 @@ gStdScripts_End::
 	.include "data/maps/TerraCave_Entrance/scripts.inc"
 	.include "data/maps/TerraCave_End/scripts.inc"
 	.include "data/maps/AlteringCave/scripts.inc"
-	.include "data/maps/AlteringCave_1F/scripts.inc"
-	.include "data/maps/AlteringCave_B1F/scripts.inc"
 	.include "data/maps/MeteorFalls_StevensCave/scripts.inc"
 	.include "data/scripts/shared_secret_base.inc"
 	.include "data/maps/BattleColosseum_2P/scripts.inc"
@@ -580,20 +578,6 @@ gStdScripts_End::
 	.include "data/maps/Route119_House/scripts.inc"
 	.include "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc"
 	.include "data/maps/VerdanturfMeadow/scripts.inc"
-	.include "data/maps/Seaspray_Cave/scripts.inc"
-	.include "data/maps/Seaspray_Cave_B1F/scripts.inc"
-	.include "data/maps/CaveOfOrigin_DianciesRoom/scripts.inc"
-	.include "data/maps/MeteorFalls_JirachisRoom/scripts.inc"
-	.include "data/maps/EmberPath/scripts.inc"
-	.include "data/maps/AshenWoods/scripts.inc"
-	.include "data/maps/SandstrewnRuins/scripts.inc"
-	.include "data/maps/Route111_RuinsExterior/scripts.inc"
-	.include "data/maps/SandstrewnRuins_B1F/scripts.inc"
-	.include "data/maps/SandstrewnRuins_2F/scripts.inc"
-	.include "data/maps/SandstrewnRuins_3F/scripts.inc"
-	.include "data/maps/ScorchedSlab_B1F/scripts.inc"
-	.include "data/maps/ScorchedSlab_B2F/scripts.inc"
-	.include "data/maps/ScorchedSlab_HeatransRoom/scripts.inc"
 
 	.include "data/scripts/std_msgbox.inc"
 	.include "data/scripts/trainer_battle.inc"
@@ -846,17 +830,6 @@ Common_EventScript_PlayerHandedOverTheItem::
 	waitmessage
 	waitfanfare
 	removeitem VAR_0x8004
-	return
-
-Common_EventScript_RemoveOverworldAfterBattle:
-	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, Common_EventScript_TryRemoveMon
-	end
-
-Common_EventScript_TryRemoveMon::
-	specialvar VAR_RESULT, GetBattleOutcome
-	compare VAR_RESULT, B_OUTCOME_CAUGHT
-	goto_if_ne Common_EventScript_NopReturn
-	removeobject VAR_LAST_TALKED
 	return
 
 	.include "data/scripts/elite_four.inc"
