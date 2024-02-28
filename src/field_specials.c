@@ -4375,7 +4375,7 @@ void FossilToSpecies(void)
 }
 
 // Checks if player chose a Fossil using Bag_ChooseItem
-bool8 IsItemFossil (void)
+bool8 IsItemFossil(void)
 {
     u16 item = gSpecialVar_ItemId;
     if ((item >= ITEM_HELIX_FOSSIL && item <= ITEM_SAIL_FOSSIL))
@@ -4386,7 +4386,7 @@ bool8 IsItemFossil (void)
 }
 
 // Checks player's bag for a fossil item. Better than 12 "checkItem" lines in a script!
-bool8 DoesPlayerHaveFossil (void)
+bool8 DoesPlayerHaveFossil(void)
 {
     u16 fossil = ITEM_HELIX_FOSSIL;
 
@@ -4402,7 +4402,7 @@ bool8 DoesPlayerHaveFossil (void)
 
 // Calculates level for gift mons and static encounters that can still evolve.
 // Sets that level to highest level - 3 and stores it in gSpecialVar_0x800A.
-void GetStaticEncounterLevel (void)
+void GetStaticEncounterLevel(void)
 {
     gSpecialVar_0x800A = GetHighestLevelInPlayerParty();
 
