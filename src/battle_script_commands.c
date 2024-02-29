@@ -14869,7 +14869,7 @@ static void Cmd_handleballthrow(void)
                 break;
             case ITEM_SAFARI_BALL:
                 if (B_SAFARI_BALL_MODIFIER <= GEN_7)
-                    ballMultiplier = 150;
+                    ballMultiplier = 300;
                 break;
             case ITEM_NET_BALL:
                 if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_WATER) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_BUG))
@@ -14878,7 +14878,7 @@ static void Cmd_handleballthrow(void)
             case ITEM_DIVE_BALL:
                 if (GetCurrentMapType() == MAP_TYPE_UNDERWATER
                     || (B_DIVE_BALL_MODIFIER >= GEN_4 && (gIsFishingEncounter || gIsSurfingEncounter)))
-                    ballMultiplier = 350;
+                    ballMultiplier = 500;
                 break;
             case ITEM_NEST_BALL:
                 if (B_NEST_BALL_MODIFIER >= GEN_6)
@@ -14907,16 +14907,16 @@ static void Cmd_handleballthrow(void)
                 break;
             case ITEM_TIMER_BALL:
                 ballMultiplier = 100 + (gBattleResults.battleTurnCounter * (B_TIMER_BALL_MODIFIER >= GEN_5 ? 30 : 10));
-                if (ballMultiplier > 400)
-                    ballMultiplier = 400;
+                // if (ballMultiplier > 400)
+                //     ballMultiplier = 400;
                 break;
             case ITEM_DUSK_BALL:
                 i = GetTimeOfDay();
                 if (i == TIME_EVENING || i == TIME_NIGHT || gMapHeader.cave || gMapHeader.mapType == MAP_TYPE_UNDERGROUND)
-                    ballMultiplier = (B_DUSK_BALL_MODIFIER >= GEN_7 ? 300 : 350);
+                    ballMultiplier = (B_DUSK_BALL_MODIFIER >= GEN_7 ? 300 : 500);
                 break;
             case ITEM_QUICK_BALL:
-                if (gBattleResults.battleTurnCounter == 0)
+                if (gBattleResults.battleTurnCounter >= 2)
                     ballMultiplier = (B_QUICK_BALL_MODIFIER >= GEN_5 ? 500 : 400);
                 break;
             case ITEM_LEVEL_BALL:
@@ -14963,7 +14963,7 @@ static void Cmd_handleballthrow(void)
                 break;
             case ITEM_FAST_BALL:
                 if (gSpeciesInfo[gBattleMons[gBattlerTarget].species].baseSpeed >= 100)
-                    ballMultiplier = 400;
+                    ballMultiplier = 500;
                 break;
             case ITEM_HEAVY_BALL:
                 i = GetSpeciesWeight(gBattleMons[gBattlerTarget].species);

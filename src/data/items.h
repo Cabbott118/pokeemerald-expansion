@@ -325,8 +325,8 @@ const struct Item gItemsInfo[] =
         .price = 30,
         .description = COMPOUND_STRING(
             "Works well if\n"
-            "used on the\n"
-            "first turn."),
+            "used early\n"
+            "in battle."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_PokeBall,
@@ -475,9 +475,9 @@ const struct Item gItemsInfo[] =
         .price = 30,
         .description = COMPOUND_STRING(
         #if B_DREAM_BALL_MODIFIER >= GEN_8
-            "A Ball that works\n"
-            "well on sleeping\n"
-            "Pokémon."),
+            "This Ball seems\n"
+            "to exude an\n"
+            "unusual aura."),
         #else
             "A Poké Ball used in\n"
             "the Entree Forest."),
