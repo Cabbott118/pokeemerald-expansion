@@ -1714,24 +1714,32 @@
     {
       "map_section": "MAPSEC_VERDANTURF_MEADOW",
       "name": "Verdanturf Glade",
-      "x": 8,
-      "y": 4,
+      "x": 0,
+      "y": 0,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_DEWFORD_MEADOW",
       "name": "Dewford Meadow",
-      "x": 8,
-      "y": 4,
+      "x": 0,
+      "y": 0,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_DEWFORD_MANOR",
       "name": "Dewford Manor",
-      "x": 8,
-      "y": 4,
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_SEASPRAY_CAVE",
+      "name": "Seaspray Cave",
+      "x": 0,
+      "y": 0,
       "width": 1,
       "height": 1
     }

@@ -93,7 +93,8 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125"
+    "Underwater_Route125",
+    "Route115Mountain"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -437,7 +438,10 @@
   "gMapGroup_Dungeons2": [
     "VerdanturfMeadow",
     "DewfordMeadow",
-    "DewfordManor_1F"
+    "DewfordManor_1F",
+    "SeasprayCave",
+    "SeasprayCave_B1F",
+    "SeasprayCave_Tunnel"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

@@ -4460,6 +4460,46 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/VerdanturfMeadow/border.bin",
       "blockdata_filepath": "data/layouts/VerdanturfMeadow/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEASPRAY_CAVE",
+      "name": "SeasprayCave_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SeasprayCave/border.bin",
+      "blockdata_filepath": "data/layouts/SeasprayCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEASPRAY_CAVE_B1F",
+      "name": "SeasprayCave_B1F_Layout",
+      "width": 30,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SeasprayCave_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/SeasprayCave_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEASPRAY_CAVE_TUNNEL",
+      "name": "SeasprayCave_Tunnel_Layout",
+      "width": 50,
+      "height": 60,
+      "primary_tileset": "gTileset_Snow_Tiles",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/SeasprayCave_Tunnel/border.bin",
+      "blockdata_filepath": "data/layouts/SeasprayCave_Tunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE115MOUNTAIN",
+      "name": "Route115Mountain_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_Snow_Tiles",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Route115Mountain/border.bin",
+      "blockdata_filepath": "data/layouts/Route115Mountain/map.bin"
     }
   ]
 }

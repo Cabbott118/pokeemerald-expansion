@@ -998,7 +998,7 @@ static bool8 IsWildLevelAllowedByRepel(u8 wildLevel)
     {
         if (GetMonData(&gPlayerParty[i], MON_DATA_HP) && !GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
         {
-            u8 ourLevel = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
+            u8 ourLevel = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL) + 5;
 
             if (wildLevel < ourLevel)
                 return FALSE;

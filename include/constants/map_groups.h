@@ -63,6 +63,7 @@
 #define MAP_UNDERWATER_ROUTE129 (54 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE105 (55 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
+#define MAP_ROUTE115MOUNTAIN    (57 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -404,9 +405,12 @@
 #define MAP_ALTERING_CAVE                            (109 | (24 << 8))
 
 // gMapGroup_Dungeons2
-#define MAP_VERDANTURF_MEADOW (0 | (25 << 8))
-#define MAP_DEWFORD_MEADOW    (1 | (25 << 8))
-#define MAP_DEWFORD_MANOR_1F  (2 | (25 << 8))
+#define MAP_VERDANTURF_MEADOW    (0 | (25 << 8))
+#define MAP_DEWFORD_MEADOW       (1 | (25 << 8))
+#define MAP_DEWFORD_MANOR_1F     (2 | (25 << 8))
+#define MAP_SEASPRAY_CAVE        (3 | (25 << 8))
+#define MAP_SEASPRAY_CAVE_B1F    (4 | (25 << 8))
+#define MAP_SEASPRAY_CAVE_TUNNEL (5 | (25 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (26 << 8))
